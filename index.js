@@ -114,46 +114,9 @@ const addSearchEventListener = () => {
 
     switch (iconCode) {
       case "01d":
-        return "./images/sunny.png";
-      case "01n":
-        return "images/half-moon.png";
-      case "02d":
-        return "images/cloudy.png";
-      case "02n":
-        return "images/partly-cloudy.png";
-      case "03d":
-        return "images/partly-cloudy.png";
-      case "03n":
-        return "images/night-cloud.png";
-      case "04d":
-        return "images/partly-cloudy.png";
-      case "04n":
-        return "images/night-cloud.png";
-      case "09d":
-        return "images/rain.png";
-      case "09n":
-        return "images/rainy-night.png";
-      case "10d":
-        return "images/rain.png";
-      case "10n":
-        return "images/rainy-night.png";
-      case "11d":
-        return "images/storm.png";
-      case "11n":
-        return "images/storm.png";
-      case "13d":
-        return "images/snow.png";
-      case "13n":
-        return "images/snow.png";
-      case "50d":
-        return "images/foggy.png";
-      case "50n":
-        return "images/foggy.png";
-      default:
-        return "./images/sunny.png";
-    }
+        return "./images/sunny.jpeg";
+    };
   
-
 const updateCurrentWeather = (data, forecastData) => {
   city.textContent = `${data.name}, ${data.sys.country}`;
   humidity.textContent = `Humidity: ${data.main.humidity}`;
